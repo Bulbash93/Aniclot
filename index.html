@@ -5,369 +5,636 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@500&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount:wght@500&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container container__header">
         <div class="header__inner">
-            <img src="img/logo.svg" alt="logo">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            Аниме
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            Футболки
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            Лонгсливы
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            худи
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            Инфо
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            Новости
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#" class="phone__link" id="popup-btn">
-                <img src="img/tel.svg" alt="Телефон" class="icon" loading="lazy">
-                <span class="phone__number popup">+7 900 000-00-00</span>
-            </a>
-            <ul class="profile__list">
-                <li class="profile__item">
-                    <a href="#" class="profile__link">
-                        <img class="user__img" src="img/user.svg" alt="user">
-                        <span class="user-email">Alexsandеr@gmail.com</span>
-                    </a>
-                    <a href="#" class="profile__link">
-                        <span class="bonus-points">10 000 бал.</span>
-                    </a>
-                </li>
+          <img src="img/logo.svg" alt="logo" />
+          <nav class="header__nav">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  Аниме
+                  <div class="dropdown__menu">
+                    <div class="dropdown__links polygon__links">
+                      <img
+                        class="polygon"
+                        src="img/Polygon 1.svg"
+                        alt="Polygon"
+                      />
+                      <ul class="anime__items">
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Магическая битва</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link"
+                            >Клинок, рассекающий демонов</a
+                          >
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Берсерк</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Баскетбол Куроко</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Человек-бензопила</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link"
+                            >Моя геройская академия</a
+                          >
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Евангелион</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Блич</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__links">
+                      <ul class="anime__items">
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Магическая битва</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link"
+                            >Клинок, рассекающий демонов</a
+                          >
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Берсерк</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Баскетбол Куроко</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Человек-бензопила</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link"
+                            >Моя геройская академия</a
+                          >
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Евангелион</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Блич</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown__links">
+                      <ul class="anime__items">
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Магическая битва</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link"
+                            >Клинок, рассекающий демонов</a
+                          >
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Берсерк</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Баскетбол Куроко</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Человек-бензопила</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link"
+                            >Моя геройская академия</a
+                          >
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Евангелион</a>
+                        </li>
+                        <li class="anime__item">
+                          <a href="#" class="anime__link">Блич</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Футболки </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Лонгсливы </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> худи </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Инфо </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Новости </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link"> Контакты </a>
+              </li>
             </ul>
-            <ul class="user__nav">
-                <li class="user__nav-item">
-                    <a href="#" class="user__nav-link">
-                        <img src="img/search.svg" alt="">
-                    </a>
-                </li>
-                <li class="user__nav-item">
-                    <a href="#" class="user__nav-link">
-                        <img src="img/heart.svg" alt="">
-                    </a>
-                </li>
-                <li class="user__nav-item">
-                    <a href="#" class="user__nav-link">
-                        <img src="img/bag.svg" alt="">
-                    </a>
-                </li>
-            </ul>        
+          </nav>
+          <a href="#" class="phone__link" id="popup-btn">
+            <img src="img/tel.svg" alt="Телефон" class="icon" loading="lazy" />
+            <span class="phone__number popup">+7 900 000-00-00</span>
+          </a>
+          <ul class="profile__list">
+            <li class="profile__item">
+              <a href="#" class="profile__link">
+                <img class="user__img" src="img/user.svg" alt="user" />
+                <span class="user-email">Alexsandеr@gmail.com</span>
+              </a>
+              <a href="#" class="profile__link">
+                <span class="bonus-points">10 000 бал.</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="user__nav">
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-link">
+                <img src="img/search.svg" alt="" />
+              </a>
+            </li>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-link">
+                <img src="img/heart.svg" alt="" />
+              </a>
+            </li>
+            <li class="user__nav-item">
+              <a href="#" class="user__nav-link">
+                <img src="img/bag.svg" alt="" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="header__swiper swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/header.png" alt="header" class="img__slide"></div>
-            <div class="swiper-slide"><img src="img/header.png" alt="header" class="img__slide"></div>
-            <div class="swiper-slide"><img src="img/header.png" alt="header" class="img__slide"></div>
+          <div class="swiper-slide">
+            <img src="img/header.png" alt="header" class="img__slide" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/header.png" alt="header" class="img__slide" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/header.png" alt="header" class="img__slide" />
+          </div>
         </div>
-        <div class="swiper-button-prev"><img src="img/arrow-narrow-left.svg" alt="left"></div>
-        <div class="swiper-button-next"><img src="img/arrow-narrow-right.svg" alt="right"></div>
+        <div class="swiper-button-prev">
+          <img src="img/arrow-narrow-left.svg" alt="left" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="img/arrow-narrow-right.svg" alt="right" />
+        </div>
       </div>
       <div class="pupup" id="pupup">
         <div class="pupup__inner">
-            <div class="pupup__close">
-                <div class="btn-close" id="closePupup">
-                <span></span>
-                <span></span>
-                </div>
+          <div class="pupup__close">
+            <div class="btn-close" id="closePupup">
+              <span class="line-one"></span>
+              <span class="line-two"></span>
             </div>
-            <div class="pupup__inner-input">
-                <h2>Обратный звонок</h2>
-                <input type="text" tabindex="Имя">
-                <input type="tel" tabindex="номер телефона">
+          </div>
+          <div class="pupup__inner-input">
+            <h2 class="pupup__inner-input-title">Обратный звонок</h2>
+            <div class="form__header">
+              <input
+                class="input__header"
+                type="text"
+                placeholder="Имя"
+                tabindex="1"
+              />
+              <input
+                class="input__header"
+                type="tel"
+                placeholder="Номер телефона"
+                tabindex="2"
+              />
             </div>
             <div class="pupup__send">
-                <button class="pupup__send-btn">Отправить</button>
-                <p>Нажимая кнопку, вы соглашаетесь с обработкой<br>ваших персональных данных</p>
+              <button class="pupup__send-btn">Отправить</button>
+              <p>
+                Нажимая кнопку, вы соглашаетесь с обработкой<br />ваших
+                персональных данных
+              </p>
             </div>
+          </div>
         </div>
       </div>
     </header>
     <main>
-        <section class="new">
-            <div class="container container__new">
-                <div class="new__title-box">
-                    <h2 class="title__new">Новинки</h2>
-                    <a href="#" class="title__btn-link">
-                        <button class="title__btn">
-                            Все новинки
-                            <img src="img/arrow-narrow-right.svg" alt="new" class="title__btn-img">
-                        </button>
-                    </a>
+      <section class="new">
+        <div class="container container__new">
+          <div class="new__title-box">
+            <h2 class="title__new">Новинки</h2>
+            <a href="#" class="title__btn-link">
+              <button class="title__btn">
+                Все новинки
+                <img
+                  src="img/arrow-narrow-right.svg"
+                  alt="new"
+                  class="title__btn-img"
+                />
+              </button>
+            </a>
+          </div>
+          <div class="new__swiper swiper">
+            <div class="swiper-wrapper swiper-wrapper-new">
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 1.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
                 </div>
-                <div class="new__swiper swiper">
-                    <div class="swiper-wrapper swiper-wrapper-new">
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 1.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">клинок рассекающий демонов</p>
-                                <p class="slider-info-name">Футболка анимеклинок рассекающий демонов, черный</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 2.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">Магическая битва</p>
-                                <p class="slider-info-name">Футболка Магическая битва</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 3.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">клинок рассекающий демонов</p>
-                                <p class="slider-info-name">Футболка анимеклинок рассекающий демонов, черный цвет, 46 размер, 100% хлопок</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 3.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">клинок рассекающий демонов</p>
-                                <p class="slider-info-name">Футболка анимеклинок рассекающий демонов, черный цвет, 46 размер, 100% хлопок</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 1.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">клинок рассекающий демонов</p>
-                                <p class="slider-info-name">Футболка анимеклинок рассекающий демонов, черный</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 2.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">Магическая битва</p>
-                                <p class="slider-info-name">Футболка Магическая битва</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 3.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">клинок рассекающий демонов</p>
-                                <p class="slider-info-name">Футболка анимеклинок рассекающий демонов, черный цвет, 46 размер, 100% хлопок</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-new">
-                            <div class="swiper__slide-top">
-                                <p class="slide__title">new!</p>
-                                <img src="img/slider-img/image 3.png" alt="new" class="slide__title-img">
-                                <img src="img/slider-img/slider-heart.svg" alt="" class="slider-heart">
-                            </div>
-                            <div class="swiper__slide-info">
-                                <p class="slide-info-theme">клинок рассекающий демонов</p>
-                                <p class="slider-info-name">Футболка анимеклинок рассекающий демонов, черный цвет, 46 размер, 100% хлопок</p>
-                            </div>
-                            <div class="swiper__slide-price">
-                                <p class="slide-price">10 000 ₽</p>
-                                <p class="slide-price-old">20 000 ₽</p>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="swiper-button-prev new-arrow-prev"><img src="img/slider-img/arrow-narrow-left.svg" alt="left"></div>
-                        <div class="swiper-button-next new-arrow-next"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                </div>     
-            </div>
-        </section>
-        <section class="popular">
-            <div class="container container__popular">
-                <div class="popular_inner">
-                    <div class="popular__blog1 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">Магическая битва</p>
-                            </div>
-                            <div class="category-arrow">
-                                <div class="swiper-button-next new-arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            </div>
-                        </div>
-                    <img src="img/popular/image-Photoroom 1.png" alt="">
-                    </div>
-                    <div class="popular__blog2 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">Человек — бензопила</p>
-                            </div>
-                            <div class="category-arrow">
-                                <div class="swiper-button-next new-arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            </div>
-                        </div>
-                        <img src="img/popular/image-Photoroom 2.png" alt="">
-                    </div>
-                    <div class="popular__blog3 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">Евангелион</p>
-                            </div>
-                            <div class="category-arrow">
-                                <div class="swiper-button-next new-arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            </div>
-                        </div>
-                        <img src="img/popular/image-Photoroom 3.png" alt="">
-                    </div>
-                    <div class="popular__blog4 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">Клинок рассекающий демонов<br>sddd 1111</p>
-                            </div>
-                        </div>
-                        <div class="category-arrow popular-arrow">
-                            <div class="swiper-button-next new-arrow-popular arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            <img class="category-img" src="img/popular/image-Photoroom 4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="popular__blog5 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">Клинок рассекающий демонов<br>sddd 1111</p>
-                            </div>
-                        </div>
-                        <div class="category-arrow popular-arrow">
-                            <div class="swiper-button-next new-arrow-popular arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            <img class="category-img" src="img/popular/image-Photoroom 5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="popular__blog6 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">Моя геройская академия</p>
-                            </div>
-                            <div class="category-arrow">
-                                <div class="swiper-button-next new-arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            </div>
-                        </div>
-                        <img src="img/popular/image-Photoroom 6.png" alt="">
-                    </div>
-                    <div class="popular__blog7 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">Блич</p>
-                            </div>
-                            <div class="category-arrow">
-                                <div class="swiper-button-next new-arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            </div>
-                        </div>
-                        <img src="img/popular/image-Photoroom 7.png" alt="">
-                    </div>
-                    <div class="popular__blog8 popular__blog">
-                        <div class="category__box">
-                            <div class="category-text">
-                                <p class="category">колекция</p>
-                                <p class="category__title">One-Punch Man</p>
-                            </div>
-                            <div class="category-arrow">
-                                <div class="swiper-button-next new-arrow-popular"><img src="img//slider-img/arrow-narrow-right.svg" alt="right"></div>
-                            </div>
-                        </div>
-                        <img src="img/popular/image-Photoroom 8.png" alt="">
-                    </div>
-                    <div class="popular__blog9">
-                        <p class="category-top">Популярные коллекции</p>
-                        <a href="#" class="title__btn-link">
-                            <button class="title__btn">
-                                Все коллекции
-                                <img src="img/arrow-narrow-right.svg" alt="new" class="title__btn-img">
-                            </button>
-                        </a>
-                    </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">клинок рассекающий демонов</p>
+                  <p class="slider-info-name">
+                    Футболка анимеклинок рассекающий демонов, черный
+                  </p>
                 </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 2.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
+                </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">Магическая битва</p>
+                  <p class="slider-info-name">Футболка Магическая битва</p>
+                </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 3.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
+                </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">клинок рассекающий демонов</p>
+                  <p class="slider-info-name">
+                    Футболка анимеклинок рассекающий демонов, черный цвет, 46
+                    размер, 100% хлопок
+                  </p>
+                </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 3.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
+                </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">клинок рассекающий демонов</p>
+                  <p class="slider-info-name">
+                    Футболка анимеклинок рассекающий демонов, черный цвет, 46
+                    размер, 100% хлопок
+                  </p>
+                </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 1.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
+                </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">клинок рассекающий демонов</p>
+                  <p class="slider-info-name">
+                    Футболка анимеклинок рассекающий демонов, черный
+                  </p>
+                </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 2.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
+                </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">Магическая битва</p>
+                  <p class="slider-info-name">Футболка Магическая битва</p>
+                </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 3.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
+                </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">клинок рассекающий демонов</p>
+                  <p class="slider-info-name">
+                    Футболка анимеклинок рассекающий демонов, черный цвет, 46
+                    размер, 100% хлопок
+                  </p>
+                </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-new">
+                <div class="swiper__slide-top">
+                  <p class="slide__title">new!</p>
+                  <img
+                    src="img/slider-img/image 3.png"
+                    alt="new"
+                    class="slide__title-img"
+                  />
+                  <img
+                    src="img/slider-img/slider-heart.svg"
+                    alt=""
+                    class="slider-heart"
+                  />
+                </div>
+                <div class="swiper__slide-info">
+                  <p class="slide-info-theme">клинок рассекающий демонов</p>
+                  <p class="slider-info-name">
+                    Футболка анимеклинок рассекающий демонов, черный цвет, 46
+                    размер, 100% хлопок
+                  </p>
+                </div>
+                <div class="swiper__slide-price">
+                  <p class="slide-price">10 000 ₽</p>
+                  <p class="slide-price-old">20 000 ₽</p>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="swiper-button-prev new-arrow-prev">
+              <img src="img/slider-img/arrow-narrow-left.svg" alt="left" />
+            </div>
+            <div class="swiper-button-next new-arrow-next">
+              <img src="img//slider-img/arrow-narrow-right.svg" alt="right" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="container container__popular">
+          <div class="popular_inner">
+            <div class="popular__blog1 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">Магическая битва</p>
+                </div>
+                <div class="category-arrow">
+                  <div class="swiper-button-next new-arrow-popular">
+                    <img
+                      src="img//slider-img/arrow-narrow-right.svg"
+                      alt="right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img src="img/popular/image-Photoroom 1.png" alt="" />
+            </div>
+            <div class="popular__blog2 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">Человек — бензопила</p>
+                </div>
+                <div class="category-arrow">
+                  <div class="swiper-button-next new-arrow-popular">
+                    <img
+                      src="img//slider-img/arrow-narrow-right.svg"
+                      alt="right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img src="img/popular/image-Photoroom 2.png" alt="" />
+            </div>
+            <div class="popular__blog3 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">Евангелион</p>
+                </div>
+                <div class="category-arrow">
+                  <div class="swiper-button-next new-arrow-popular">
+                    <img
+                      src="img//slider-img/arrow-narrow-right.svg"
+                      alt="right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img src="img/popular/image-Photoroom 3.png" alt="" />
+            </div>
+            <div class="popular__blog4 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">
+                    Клинок рассекающий демонов<br />sddd 1111
+                  </p>
+                </div>
+              </div>
+              <div class="category-arrow popular-arrow">
+                <div class="swiper-button-next new-arrow-popular arrow-popular">
+                  <img
+                    src="img//slider-img/arrow-narrow-right.svg"
+                    alt="right"
+                  />
+                </div>
+                <img
+                  class="category-img"
+                  src="img/popular/image-Photoroom 4.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="popular__blog5 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">
+                    Клинок рассекающий демонов<br />sddd 1111
+                  </p>
+                </div>
+              </div>
+              <div class="category-arrow popular-arrow">
+                <div class="swiper-button-next new-arrow-popular arrow-popular">
+                  <img
+                    src="img//slider-img/arrow-narrow-right.svg"
+                    alt="right"
+                  />
+                </div>
+                <img
+                  class="category-img"
+                  src="img/popular/image-Photoroom 5.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="popular__blog6 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">Моя геройская академия</p>
+                </div>
+                <div class="category-arrow">
+                  <div class="swiper-button-next new-arrow-popular">
+                    <img
+                      src="img//slider-img/arrow-narrow-right.svg"
+                      alt="right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img src="img/popular/image-Photoroom 6.png" alt="" />
+            </div>
+            <div class="popular__blog7 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">Блич</p>
+                </div>
+                <div class="category-arrow">
+                  <div class="swiper-button-next new-arrow-popular">
+                    <img
+                      src="img//slider-img/arrow-narrow-right.svg"
+                      alt="right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img src="img/popular/image-Photoroom 7.png" alt="" />
+            </div>
+            <div class="popular__blog8 popular__blog">
+              <div class="category__box">
+                <div class="category-text">
+                  <p class="category">колекция</p>
+                  <p class="category__title">One-Punch Man</p>
+                </div>
+                <div class="category-arrow">
+                  <div class="swiper-button-next new-arrow-popular">
+                    <img
+                      src="img//slider-img/arrow-narrow-right.svg"
+                      alt="right"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img src="img/popular/image-Photoroom 8.png" alt="" />
+            </div>
+            <div class="popular__blog9">
+              <p class="category-top">Популярные коллекции</p>
+              <a href="#" class="title__btn-link">
+                <button class="title__btn">
+                  Все коллекции
+                  <img
+                    src="img/arrow-narrow-right.svg"
+                    alt="new"
+                    class="title__btn-img"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

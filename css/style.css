@@ -6,6 +6,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  font-family: sans-serif;
 }
 
 body {
@@ -44,6 +45,63 @@ header {
   font-weight: 700;
   font-style: Bold;
   font-size: 13px;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.dropdown__menu {
+  width: 968px;
+  margin-top: 13px;
+  position: absolute;
+  border-radius: 20px;
+  top: 13px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  color: rgba(35, 31, 32, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: translateX(-50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.2s, opacity 0.2s, transform 0.2s;
+}
+
+.polygon {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  top: -19px;
+  margin-left: -22px;
+}
+
+.polygon__links {
+  margin-top: -22px;
+}
+
+.menu__item.open__dropdown .dropdown__menu {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown__links {
+  padding: 30px;
+}
+
+.anime__link {
+  text-decoration: none;
+  color: rgba(35, 31, 32, 1);
+}
+
+.anime__item + .anime__item {
+  padding-top: 12px;
+  gap: 20px;
 }
 
 .icon {
@@ -113,10 +171,11 @@ header {
 }
 
 .pupup {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   position: fixed;
   top: 0;
@@ -132,12 +191,123 @@ header {
 }
 
 .pupup__inner {
-  width: 380px;
+  width: 700px;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  padding: 15px 25px;
+  padding: 20px;
+}
+
+.pupup__close {
+  width: 44px;
+  height: 44px;
+  background: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-close {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-one,
+.line-two {
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.line-one {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.line-two {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.pupup__inner-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pupup__inner-input-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.form__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__header input {
+  border: none;
+  height: 60px;
+  padding-left: 20px;
+  border-radius: 10px;
+  list-style: none;
+  background: rgba(244, 244, 244, 1);
+}
+
+.input__header::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.pupup__send {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pupup__send p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(102, 102, 102, 1);
+}
+
+.pupup__send-btn {
+  width: 145px;
+  height: 56px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgba(35, 31, 32, 1);
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 14px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.dots {
+  display: flex;
+  margin-top: 30px;
+  padding: 10px;
 }
 
 .profile__item {
@@ -272,7 +442,7 @@ header {
 .swiper__slide-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 76px;
 }
 
 .slide-info-theme {
