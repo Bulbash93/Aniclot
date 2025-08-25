@@ -5,29 +5,28 @@ html {
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
   font-family: sans-serif;
 }
 
 body {
+  max-width: 1920px;
   background: #f1f4f5;
   margin: 20px;
   font-family: Manrope;
 }
 
 header {
+  max-width: 1920px;
   margin-bottom: 80px;
-}
-
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .header__inner {
   position: fixed;
-  min-width: 1360px;
-  z-index: 1000;
+  width: 1360px;
+  z-index: 2;
   display: flex;
   gap: 89px;
   align-items: center;
@@ -99,7 +98,7 @@ header {
   color: rgba(35, 31, 32, 1);
 }
 
-.anime__item + .anime__item {
+.anime__item+.anime__item {
   padding-top: 12px;
   gap: 20px;
 }
@@ -167,10 +166,11 @@ header {
 }
 
 .header__swiper {
-  width: 1400px;
+  max-width: 1400px;
 }
 
 .pupup {
+  max-width: 1440px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -304,12 +304,6 @@ header {
   text-transform: uppercase;
 }
 
-.dots {
-  display: flex;
-  margin-top: 30px;
-  padding: 10px;
-}
-
 .profile__item {
   display: flex;
   width: 217px;
@@ -324,14 +318,14 @@ header {
 }
 
 .swiper-wrapper {
-  width: 1400px;
+  min-width: 1200px;
 }
 
 .img__slide {
-  width: 1400px;
+
+  max-width: 1440px;
   margin-right: 20px;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 .swiper-button-prev,
@@ -349,8 +343,12 @@ header {
   content: none;
 }
 
-.container__new {
+.new {
   margin-bottom: 80px;
+}
+
+.container__new {
+  max-width: 1400px;
 }
 
 .new__title-box {
@@ -493,6 +491,8 @@ header {
 }
 
 .popular_inner {
+  max-width: 1400px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -509,6 +509,7 @@ header {
   border-radius: 20px;
   color: white;
 }
+
 .popular__blog2 {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
@@ -648,5 +649,171 @@ header {
   line-height: 1.4;
 }
 
-.title__btn {
+@media (max-width: 1200px) {
+  .header__inner {
+    max-width: 1120px;
+    gap: 29px;
+    left: 50%;
+  }
+
+  .new__title-box {
+    max-width: 1120px;
+  }
+
+  .container__popular {
+    max-width: 1120px;
+  }
+
+  .swiper-slide {
+    width: 373px;
+  }
+
+  .popular__blog {
+    width: 275px;
+  }
+}
+
+@media (max-width: 744px) {
+  .header__inner {
+    width: 684px;
+    justify-content: space-between;
+    left: 50%;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__swiper {
+    width: 704px;
+    left: auto;
+    right: auto;
+  }
+
+  .new__title-box {
+    max-width: 704px;
+  }
+
+  .container__popular {
+    max-width: 704px;
+  }
+
+  .swiper-slide {
+    width: 347px;
+  }
+
+  .popular_inner {
+    max-width: 704px;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 колонки */
+    grid-template-rows: repeat(3, 1fr);
+    /* 3 строки */
+    gap: 10px;
+  }
+
+  .popular__blog {
+    display: flex;
+    width: 228px;
+    height: 257px;
+  }
+
+  .popular__blog1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .popular__blog2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .popular__blog3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .popular__blog4 {
+    display: none;
+  }
+
+  .clone1 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .popular__blog5 {
+    display: none;
+    grid-area: 3 / 3 / 4 / 4;
+  }
+
+  .popular__blog6 {
+    display: none;
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .clone3 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+
+  .popular__blog7 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .clone2 {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+
+  .popular__blog8 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .popular__blog9 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .category-img-main {
+    width: 135px;
+    height: 179px;
+    object-fit: cover;
+    margin: 68px 5px 0px -18px;
+  }
+
+  .category__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .category__text {
+    width: 145px;
+  }
+
+  .category-top {
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .popular-arrow {
+    width: 32px;
+    height: 32px;
+    margin-top: -32px;
+    background: rgba(102, 102, 102, 1);
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    width: 360px;
+  }
+
+  .header__inner {
+    width: 320px;
+    justify-content: space-between;
+  }
+
+  .profile__list {
+    display: none;
+  }
+
+  .user__nav {
+    display: none;
+  }
 }
