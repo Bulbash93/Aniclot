@@ -15,6 +15,24 @@ const swiperNew = new Swiper(".new__swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    // настройки для разных размеров экрана
+    // для экранов меньше 1200px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    // для экранов меньше 768px
+    744: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // для экранов меньше 576px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5,
+    },
+  },
 });
 
 const openBtnHeader = document.getElementById("popup-btn");
@@ -51,4 +69,11 @@ document.body.addEventListener("click", (event) => {
   document.querySelectorAll(".menu__item").forEach((item) => {
     item.classList.remove("open__dropdown");
   });
+});
+
+const menuBtn = document.querySelector(".menu__btn");
+const menu = document.querySelector(".menu__list");
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle("menu-active");
 });
